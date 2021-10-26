@@ -2668,69 +2668,6 @@ func (x *IndividualVotesRespond) GetIndividualVotes() []*IndividualVotesRespond_
 	return nil
 }
 
-type WeakSubjectivityCheckpoint struct {
-	state         protoimpl.MessageState
-	sizeCache     protoimpl.SizeCache
-	unknownFields protoimpl.UnknownFields
-
-	BlockRoot []byte                                    `protobuf:"bytes,1,opt,name=block_root,json=blockRoot,proto3" json:"block_root,omitempty"`
-	StateRoot []byte                                    `protobuf:"bytes,2,opt,name=state_root,json=stateRoot,proto3" json:"state_root,omitempty"`
-	Epoch     github_com_prysmaticlabs_eth2_types.Epoch `protobuf:"varint,3,opt,name=epoch,proto3" json:"epoch,omitempty" cast-type:"github.com/prysmaticlabs/eth2-types.Epoch"`
-}
-
-func (x *WeakSubjectivityCheckpoint) Reset() {
-	*x = WeakSubjectivityCheckpoint{}
-	if protoimpl.UnsafeEnabled {
-		mi := &file_proto_prysm_v1alpha1_beacon_chain_proto_msgTypes[32]
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		ms.StoreMessageInfo(mi)
-	}
-}
-
-func (x *WeakSubjectivityCheckpoint) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
-
-func (*WeakSubjectivityCheckpoint) ProtoMessage() {}
-
-func (x *WeakSubjectivityCheckpoint) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_prysm_v1alpha1_beacon_chain_proto_msgTypes[32]
-	if protoimpl.UnsafeEnabled && x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
-}
-
-// Deprecated: Use WeakSubjectivityCheckpoint.ProtoReflect.Descriptor instead.
-func (*WeakSubjectivityCheckpoint) Descriptor() ([]byte, []int) {
-	return file_proto_prysm_v1alpha1_beacon_chain_proto_rawDescGZIP(), []int{32}
-}
-
-func (x *WeakSubjectivityCheckpoint) GetBlockRoot() []byte {
-	if x != nil {
-		return x.BlockRoot
-	}
-	return nil
-}
-
-func (x *WeakSubjectivityCheckpoint) GetStateRoot() []byte {
-	if x != nil {
-		return x.StateRoot
-	}
-	return nil
-}
-
-func (x *WeakSubjectivityCheckpoint) GetEpoch() github_com_prysmaticlabs_eth2_types.Epoch {
-	if x != nil {
-		return x.Epoch
-	}
-	return github_com_prysmaticlabs_eth2_types.Epoch(0)
-}
-
 type BeaconCommittees_CommitteeItem struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
@@ -2742,7 +2679,7 @@ type BeaconCommittees_CommitteeItem struct {
 func (x *BeaconCommittees_CommitteeItem) Reset() {
 	*x = BeaconCommittees_CommitteeItem{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_proto_prysm_v1alpha1_beacon_chain_proto_msgTypes[33]
+		mi := &file_proto_prysm_v1alpha1_beacon_chain_proto_msgTypes[32]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2755,7 +2692,7 @@ func (x *BeaconCommittees_CommitteeItem) String() string {
 func (*BeaconCommittees_CommitteeItem) ProtoMessage() {}
 
 func (x *BeaconCommittees_CommitteeItem) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_prysm_v1alpha1_beacon_chain_proto_msgTypes[33]
+	mi := &file_proto_prysm_v1alpha1_beacon_chain_proto_msgTypes[32]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2789,7 +2726,7 @@ type BeaconCommittees_CommitteesList struct {
 func (x *BeaconCommittees_CommitteesList) Reset() {
 	*x = BeaconCommittees_CommitteesList{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_proto_prysm_v1alpha1_beacon_chain_proto_msgTypes[34]
+		mi := &file_proto_prysm_v1alpha1_beacon_chain_proto_msgTypes[33]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2802,7 +2739,7 @@ func (x *BeaconCommittees_CommitteesList) String() string {
 func (*BeaconCommittees_CommitteesList) ProtoMessage() {}
 
 func (x *BeaconCommittees_CommitteesList) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_prysm_v1alpha1_beacon_chain_proto_msgTypes[34]
+	mi := &file_proto_prysm_v1alpha1_beacon_chain_proto_msgTypes[33]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2839,7 +2776,7 @@ type ValidatorBalances_Balance struct {
 func (x *ValidatorBalances_Balance) Reset() {
 	*x = ValidatorBalances_Balance{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_proto_prysm_v1alpha1_beacon_chain_proto_msgTypes[36]
+		mi := &file_proto_prysm_v1alpha1_beacon_chain_proto_msgTypes[35]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2852,7 +2789,7 @@ func (x *ValidatorBalances_Balance) String() string {
 func (*ValidatorBalances_Balance) ProtoMessage() {}
 
 func (x *ValidatorBalances_Balance) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_prysm_v1alpha1_beacon_chain_proto_msgTypes[36]
+	mi := &file_proto_prysm_v1alpha1_beacon_chain_proto_msgTypes[35]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2908,7 +2845,7 @@ type Validators_ValidatorContainer struct {
 func (x *Validators_ValidatorContainer) Reset() {
 	*x = Validators_ValidatorContainer{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_proto_prysm_v1alpha1_beacon_chain_proto_msgTypes[37]
+		mi := &file_proto_prysm_v1alpha1_beacon_chain_proto_msgTypes[36]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2921,7 +2858,7 @@ func (x *Validators_ValidatorContainer) String() string {
 func (*Validators_ValidatorContainer) ProtoMessage() {}
 
 func (x *Validators_ValidatorContainer) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_prysm_v1alpha1_beacon_chain_proto_msgTypes[37]
+	mi := &file_proto_prysm_v1alpha1_beacon_chain_proto_msgTypes[36]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -2968,7 +2905,7 @@ type ValidatorAssignments_CommitteeAssignment struct {
 func (x *ValidatorAssignments_CommitteeAssignment) Reset() {
 	*x = ValidatorAssignments_CommitteeAssignment{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_proto_prysm_v1alpha1_beacon_chain_proto_msgTypes[38]
+		mi := &file_proto_prysm_v1alpha1_beacon_chain_proto_msgTypes[37]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -2981,7 +2918,7 @@ func (x *ValidatorAssignments_CommitteeAssignment) String() string {
 func (*ValidatorAssignments_CommitteeAssignment) ProtoMessage() {}
 
 func (x *ValidatorAssignments_CommitteeAssignment) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_prysm_v1alpha1_beacon_chain_proto_msgTypes[38]
+	mi := &file_proto_prysm_v1alpha1_beacon_chain_proto_msgTypes[37]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -3068,7 +3005,7 @@ type IndividualVotesRespond_IndividualVote struct {
 func (x *IndividualVotesRespond_IndividualVote) Reset() {
 	*x = IndividualVotesRespond_IndividualVote{}
 	if protoimpl.UnsafeEnabled {
-		mi := &file_proto_prysm_v1alpha1_beacon_chain_proto_msgTypes[40]
+		mi := &file_proto_prysm_v1alpha1_beacon_chain_proto_msgTypes[39]
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		ms.StoreMessageInfo(mi)
 	}
@@ -3081,7 +3018,7 @@ func (x *IndividualVotesRespond_IndividualVote) String() string {
 func (*IndividualVotesRespond_IndividualVote) ProtoMessage() {}
 
 func (x *IndividualVotesRespond_IndividualVote) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_prysm_v1alpha1_beacon_chain_proto_msgTypes[40]
+	mi := &file_proto_prysm_v1alpha1_beacon_chain_proto_msgTypes[39]
 	if protoimpl.UnsafeEnabled && x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -4199,7 +4136,7 @@ func file_proto_prysm_v1alpha1_beacon_chain_proto_rawDescGZIP() []byte {
 }
 
 var file_proto_prysm_v1alpha1_beacon_chain_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
-var file_proto_prysm_v1alpha1_beacon_chain_proto_msgTypes = make([]protoimpl.MessageInfo, 41)
+var file_proto_prysm_v1alpha1_beacon_chain_proto_msgTypes = make([]protoimpl.MessageInfo, 40)
 var file_proto_prysm_v1alpha1_beacon_chain_proto_goTypes = []interface{}{
 	(SetAction)(0),                                   // 0: ethereum.eth.v1alpha1.SetAction
 	(*ValidatorChangeSet)(nil),                       // 1: ethereum.eth.v1alpha1.ValidatorChangeSet
@@ -4234,7 +4171,6 @@ var file_proto_prysm_v1alpha1_beacon_chain_proto_goTypes = []interface{}{
 	(*SubmitSlashingResponse)(nil),                   // 30: ethereum.eth.v1alpha1.SubmitSlashingResponse
 	(*IndividualVotesRequest)(nil),                   // 31: ethereum.eth.v1alpha1.IndividualVotesRequest
 	(*IndividualVotesRespond)(nil),                   // 32: ethereum.eth.v1alpha1.IndividualVotesRespond
-	(*WeakSubjectivityCheckpoint)(nil),               // 33: ethereum.eth.v1alpha1.WeakSubjectivityCheckpoint
 	(*BeaconCommittees_CommitteeItem)(nil),           // 34: ethereum.eth.v1alpha1.BeaconCommittees.CommitteeItem
 	(*BeaconCommittees_CommitteesList)(nil),          // 35: ethereum.eth.v1alpha1.BeaconCommittees.CommitteesList
 	nil,                                              // 36: ethereum.eth.v1alpha1.BeaconCommittees.CommitteesEntry
@@ -4258,8 +4194,8 @@ var file_proto_prysm_v1alpha1_beacon_chain_proto_goTypes = []interface{}{
 }
 var file_proto_prysm_v1alpha1_beacon_chain_proto_depIdxs = []int32{
 	0,  // 0: ethereum.eth.v1alpha1.ValidatorChangeSet.action:type_name -> ethereum.eth.v1alpha1.SetAction
-	42, // 1: ethereum.eth.v1alpha1.ListAttestationsResponse.attestations:type_name -> ethereum.eth.v1alpha1.Attestation
-	43, // 2: ethereum.eth.v1alpha1.ListIndexedAttestationsResponse.indexed_attestations:type_name -> ethereum.eth.v1alpha1.IndexedAttestation
+	41, // 1: ethereum.eth.v1alpha1.ListAttestationsResponse.attestations:type_name -> ethereum.eth.v1alpha1.Attestation
+	42, // 2: ethereum.eth.v1alpha1.ListIndexedAttestationsResponse.indexed_attestations:type_name -> ethereum.eth.v1alpha1.IndexedAttestation
 	9,  // 3: ethereum.eth.v1alpha1.ListBlocksResponse.blockContainers:type_name -> ethereum.eth.v1alpha1.BeaconBlockContainer
 	9,  // 4: ethereum.eth.v1alpha1.ListBeaconBlocksResponse.block_containers:type_name -> ethereum.eth.v1alpha1.BeaconBlockContainer
 	44, // 5: ethereum.eth.v1alpha1.BeaconBlockContainer.phase0_block:type_name -> ethereum.eth.v1alpha1.SignedBeaconBlock
@@ -4311,7 +4247,6 @@ var file_proto_prysm_v1alpha1_beacon_chain_proto_depIdxs = []int32{
 	44, // 51: ethereum.eth.v1alpha1.BeaconChain.StreamBlocks:output_type -> ethereum.eth.v1alpha1.SignedBeaconBlock
 	10, // 52: ethereum.eth.v1alpha1.BeaconChain.StreamChainHead:output_type -> ethereum.eth.v1alpha1.ChainHead
 	10, // 53: ethereum.eth.v1alpha1.BeaconChain.GetChainHead:output_type -> ethereum.eth.v1alpha1.ChainHead
-	33, // 54: ethereum.eth.v1alpha1.BeaconChain.GetWeakSubjectivityCheckpoint:output_type -> ethereum.eth.v1alpha1.WeakSubjectivityCheckpoint
 	12, // 55: ethereum.eth.v1alpha1.BeaconChain.ListBeaconCommittees:output_type -> ethereum.eth.v1alpha1.BeaconCommittees
 	14, // 56: ethereum.eth.v1alpha1.BeaconChain.ListValidatorBalances:output_type -> ethereum.eth.v1alpha1.ValidatorBalances
 	17, // 57: ethereum.eth.v1alpha1.BeaconChain.ListValidators:output_type -> ethereum.eth.v1alpha1.Validators
@@ -4727,18 +4662,6 @@ func file_proto_prysm_v1alpha1_beacon_chain_proto_init() {
 			}
 		}
 		file_proto_prysm_v1alpha1_beacon_chain_proto_msgTypes[32].Exporter = func(v interface{}, i int) interface{} {
-			switch v := v.(*WeakSubjectivityCheckpoint); i {
-			case 0:
-				return &v.state
-			case 1:
-				return &v.sizeCache
-			case 2:
-				return &v.unknownFields
-			default:
-				return nil
-			}
-		}
-		file_proto_prysm_v1alpha1_beacon_chain_proto_msgTypes[33].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*BeaconCommittees_CommitteeItem); i {
 			case 0:
 				return &v.state
@@ -4750,7 +4673,7 @@ func file_proto_prysm_v1alpha1_beacon_chain_proto_init() {
 				return nil
 			}
 		}
-		file_proto_prysm_v1alpha1_beacon_chain_proto_msgTypes[34].Exporter = func(v interface{}, i int) interface{} {
+		file_proto_prysm_v1alpha1_beacon_chain_proto_msgTypes[33].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*BeaconCommittees_CommitteesList); i {
 			case 0:
 				return &v.state
@@ -4762,7 +4685,7 @@ func file_proto_prysm_v1alpha1_beacon_chain_proto_init() {
 				return nil
 			}
 		}
-		file_proto_prysm_v1alpha1_beacon_chain_proto_msgTypes[36].Exporter = func(v interface{}, i int) interface{} {
+		file_proto_prysm_v1alpha1_beacon_chain_proto_msgTypes[35].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*ValidatorBalances_Balance); i {
 			case 0:
 				return &v.state
@@ -4774,7 +4697,7 @@ func file_proto_prysm_v1alpha1_beacon_chain_proto_init() {
 				return nil
 			}
 		}
-		file_proto_prysm_v1alpha1_beacon_chain_proto_msgTypes[37].Exporter = func(v interface{}, i int) interface{} {
+		file_proto_prysm_v1alpha1_beacon_chain_proto_msgTypes[36].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*Validators_ValidatorContainer); i {
 			case 0:
 				return &v.state
@@ -4786,7 +4709,7 @@ func file_proto_prysm_v1alpha1_beacon_chain_proto_init() {
 				return nil
 			}
 		}
-		file_proto_prysm_v1alpha1_beacon_chain_proto_msgTypes[38].Exporter = func(v interface{}, i int) interface{} {
+		file_proto_prysm_v1alpha1_beacon_chain_proto_msgTypes[37].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*ValidatorAssignments_CommitteeAssignment); i {
 			case 0:
 				return &v.state
@@ -4798,7 +4721,7 @@ func file_proto_prysm_v1alpha1_beacon_chain_proto_init() {
 				return nil
 			}
 		}
-		file_proto_prysm_v1alpha1_beacon_chain_proto_msgTypes[40].Exporter = func(v interface{}, i int) interface{} {
+		file_proto_prysm_v1alpha1_beacon_chain_proto_msgTypes[39].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*IndividualVotesRespond_IndividualVote); i {
 			case 0:
 				return &v.state
@@ -4864,7 +4787,7 @@ func file_proto_prysm_v1alpha1_beacon_chain_proto_init() {
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
 			RawDescriptor: file_proto_prysm_v1alpha1_beacon_chain_proto_rawDesc,
 			NumEnums:      1,
-			NumMessages:   41,
+			NumMessages:   40,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
@@ -4902,7 +4825,6 @@ type BeaconChainClient interface {
 	StreamBlocks(ctx context.Context, in *StreamBlocksRequest, opts ...grpc.CallOption) (BeaconChain_StreamBlocksClient, error)
 	StreamChainHead(ctx context.Context, in *empty.Empty, opts ...grpc.CallOption) (BeaconChain_StreamChainHeadClient, error)
 	GetChainHead(ctx context.Context, in *empty.Empty, opts ...grpc.CallOption) (*ChainHead, error)
-	GetWeakSubjectivityCheckpoint(ctx context.Context, in *empty.Empty, opts ...grpc.CallOption) (*WeakSubjectivityCheckpoint, error)
 	ListBeaconCommittees(ctx context.Context, in *ListCommitteesRequest, opts ...grpc.CallOption) (*BeaconCommittees, error)
 	ListValidatorBalances(ctx context.Context, in *ListValidatorBalancesRequest, opts ...grpc.CallOption) (*ValidatorBalances, error)
 	ListValidators(ctx context.Context, in *ListValidatorsRequest, opts ...grpc.CallOption) (*Validators, error)
@@ -5110,15 +5032,6 @@ func (c *beaconChainClient) GetChainHead(ctx context.Context, in *empty.Empty, o
 	return out, nil
 }
 
-func (c *beaconChainClient) GetWeakSubjectivityCheckpoint(ctx context.Context, in *empty.Empty, opts ...grpc.CallOption) (*WeakSubjectivityCheckpoint, error) {
-	out := new(WeakSubjectivityCheckpoint)
-	err := c.cc.Invoke(ctx, "/ethereum.eth.v1alpha1.BeaconChain/GetWeakSubjectivityCheckpoint", in, out, opts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
-}
-
 func (c *beaconChainClient) ListBeaconCommittees(ctx context.Context, in *ListCommitteesRequest, opts ...grpc.CallOption) (*BeaconCommittees, error) {
 	out := new(BeaconCommittees)
 	err := c.cc.Invoke(ctx, "/ethereum.eth.v1alpha1.BeaconChain/ListBeaconCommittees", in, out, opts...)
@@ -5280,7 +5193,6 @@ type BeaconChainServer interface {
 	StreamBlocks(*StreamBlocksRequest, BeaconChain_StreamBlocksServer) error
 	StreamChainHead(*empty.Empty, BeaconChain_StreamChainHeadServer) error
 	GetChainHead(context.Context, *empty.Empty) (*ChainHead, error)
-	GetWeakSubjectivityCheckpoint(context.Context, *empty.Empty) (*WeakSubjectivityCheckpoint, error)
 	ListBeaconCommittees(context.Context, *ListCommitteesRequest) (*BeaconCommittees, error)
 	ListValidatorBalances(context.Context, *ListValidatorBalancesRequest) (*ValidatorBalances, error)
 	ListValidators(context.Context, *ListValidatorsRequest) (*Validators, error)
@@ -5330,9 +5242,6 @@ func (*UnimplementedBeaconChainServer) StreamChainHead(*empty.Empty, BeaconChain
 }
 func (*UnimplementedBeaconChainServer) GetChainHead(context.Context, *empty.Empty) (*ChainHead, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetChainHead not implemented")
-}
-func (*UnimplementedBeaconChainServer) GetWeakSubjectivityCheckpoint(context.Context, *empty.Empty) (*WeakSubjectivityCheckpoint, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method GetWeakSubjectivityCheckpoint not implemented")
 }
 func (*UnimplementedBeaconChainServer) ListBeaconCommittees(context.Context, *ListCommitteesRequest) (*BeaconCommittees, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method ListBeaconCommittees not implemented")
@@ -5569,24 +5478,6 @@ func _BeaconChain_GetChainHead_Handler(srv interface{}, ctx context.Context, dec
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(BeaconChainServer).GetChainHead(ctx, req.(*empty.Empty))
-	}
-	return interceptor(ctx, in, info, handler)
-}
-
-func _BeaconChain_GetWeakSubjectivityCheckpoint_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(empty.Empty)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(BeaconChainServer).GetWeakSubjectivityCheckpoint(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: "/ethereum.eth.v1alpha1.BeaconChain/GetWeakSubjectivityCheckpoint",
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(BeaconChainServer).GetWeakSubjectivityCheckpoint(ctx, req.(*empty.Empty))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -5878,10 +5769,6 @@ var _BeaconChain_serviceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "GetChainHead",
 			Handler:    _BeaconChain_GetChainHead_Handler,
-		},
-		{
-			MethodName: "GetWeakSubjectivityCheckpoint",
-			Handler:    _BeaconChain_GetWeakSubjectivityCheckpoint_Handler,
 		},
 		{
 			MethodName: "ListBeaconCommittees",
